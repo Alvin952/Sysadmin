@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #222;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background-color: #333;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+      text-align: center;
+    }
+    .button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ddd;
+      color: #000;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #bbb;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Halo, {{ username }} 👋</h1>
+    <p>{{ message }}</p>
+    
+    <div class="button-container">
+      <a href="/" class="button">← Kembali ke Home</a>
+      <a href="/" class="button">➡ Masuk keee Redirector</a>
+    </div>
+  </div>
+
+</body>
+</html>
